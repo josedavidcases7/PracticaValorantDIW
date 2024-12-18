@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@heroicons/react@1.0.6/outline/index.js"></script>
+    <style>
+      :root {
+        --image-url: url("./media/fotovalorant1.jpg");
+      }
+    </style>
+  </head>
+  <body class="bg-gray-300 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-6 bg-gray-800 text-white shadow-md"
+    >
+      <a href="index.html" class="block">
+        <img
+          src="./media/valorant-seeklogo-2.svg"
+          alt="Valorant Logo"
+          class="h-8 md:h-10 lg:h-14"
+        />
+      </a>
+      <nav class="flex items-center gap-6">
+        <ul class="flex gap-6 text-lg text-gray-200">
+          <li>
+            <a href="personajes.html" class="hover:text-red-500">Personajes</a>
+          </li>
+          <li><a href="mapas.html" class="hover:text-red-500">Mapas</a></li>
+        </ul>
+      
+        <button
+          id="themeToggle"
+          class="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-full shadow-md hover:bg-gray-400 dark:hover:bg-gray-600 transition-all"
+        >
+      
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-lightbulb"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-screen bg-cover bg-center relative pt-24 md:pt-28 lg:pt-36"
+      style="background-image: var(--image-url)"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <h1
+          class="text-gray-100 text-4xl md:text-6xl lg:text-8xl font-bold text-center"
+        >
+          Adéntrate en el mundo de Valorant
+        </h1>
+      </div>
+    </section>
+
+    <!-- Top 3 Characters Section -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-gray-200"
+        >
+          Top 3 personajes de la semana
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- CARD JETT -->
+          <div
+            class="bg-gray-200 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+          >
+            <div class="h-60 flex items-center justify-center bg-inherit">
+              <img
+                src="./media/jettEntero.png"
+                alt="Jett"
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                Jett
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Maestra del viento, rápida y letal.
+              </p>
+            </div>
+          </div>
+          <!-- CARD RAZE -->
+          <div
+            class="bg-gray-200 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+          >
+            <div class="h-60 flex items-center justify-center bg-inherit">
+              <img
+                src="./media/razeEntero.png"
+                alt="Raze"
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                Raze
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Explosiva y carismática, experta en destrucción.
+              </p>
+            </div>
+          </div>
+          <!-- CARD SOVA -->
+          <div
+            class="bg-gray-200 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+          >
+            <div class="h-60 flex items-center justify-center bg-inherit">
+              <img
+                src="./media/sovaEntero.png"
+                alt="Sova"
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                Sova
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Cazador preciso, implacable en la batalla.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-200 dark:bg-gray-800 text-center py-4">
+      <p class="text-gray-800 dark:text-gray-200 text-sm">
+        Copyright © | Todos los derechos reservados a ApiValorant
+      </p>
+    </footer>
+
+    <script src="./home.js"></script>
+  </body>
+</html>
